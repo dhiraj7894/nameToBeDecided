@@ -1,0 +1,12 @@
+# Blender MTL File: 'trident.blend'
+# Material Count: 1
+
+newmtl Material
+Ns 146.974110
+Ka 1.000000 1.000000 1.000000
+Kd 0.701102 0.376262 0.014444
+Ks 0.602740 0.602740 0.602740
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
