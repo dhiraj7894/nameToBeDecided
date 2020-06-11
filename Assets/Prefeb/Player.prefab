@@ -151,9 +151,9 @@ MonoBehaviour:
   cam: {fileID: 0}
   Gun: {fileID: 7304951706947370484}
   verticalVelocity: 0
-  jumpForce: 5
-  speed: 7
-  rotationSmoothness: 1
+  jumpForce: 10
+  speed: 8
+  rotationSmoothness: 0.5
   anime: {fileID: 1762402250}
   _angle: 0
 --- !u!208 &972094735
@@ -166,7 +166,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 1, y: 0.5, z: 1}
+  m_Extents: {x: 1.5, y: 0.5, z: 1.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -184,29 +184,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ee5cc55dacfbd429d583bec6b6a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_bl: {fileID: 7772815897246385354, guid: 74d7160700c456c4c8a9f24dbf9aa07e,
-    type: 3}
-  bullet_or: {fileID: 2520621807573303900, guid: 65cb9d040633d494bb6fa38b1e4b27a5,
-    type: 3}
-  bullet_fire: {fileID: 6792358811301783035, guid: d43784f0c1f6c4446a00fd170f2c4adb,
-    type: 3}
   player: {fileID: 2280501081388325046}
   anime: {fileID: 1762402250}
-  speed: 30
-  fireRate: 4
-  ShutPoint: {fileID: 6317992646730550638}
+  speed: 40
+  fireRate: 5
+  fireCooldown: 0
+  shootPoint: {fileID: 6317992646730550638}
   BulletVFX:
+  - {fileID: 2319454386537777168, guid: 65cb9d040633d494bb6fa38b1e4b27a5, type: 3}
   - {fileID: 63470200146397999, guid: 74d7160700c456c4c8a9f24dbf9aa07e, type: 3}
   - {fileID: 8584721988026001516, guid: d43784f0c1f6c4446a00fd170f2c4adb, type: 3}
-  - {fileID: 2319454386537777168, guid: 65cb9d040633d494bb6fa38b1e4b27a5, type: 3}
   MuzzelVFX:
+  - {fileID: 2023769570322753612, guid: 9ded618bed0fe774088c7b4f4f62f267, type: 3}
   - {fileID: 8400126063158604005, guid: e6d9a56eda38b304aa0fbea300ffa8d3, type: 3}
   - {fileID: 715982894056578561, guid: 3544cabb2807db44fbe74837c0aa3fe0, type: 3}
-  - {fileID: 2023769570322753612, guid: 9ded618bed0fe774088c7b4f4f62f267, type: 3}
   MuzzelVFXHit:
+  - {fileID: 8133641016976903564, guid: 0d08d1add8a70424b95fef66b112fd67, type: 3}
   - {fileID: 2954926015685624330, guid: 8b23bbbcb9b93c54ab76d6a81a7c38a9, type: 3}
   - {fileID: 1149963746134178675, guid: c2290fc88a3b6a747a20763af69cf177, type: 3}
-  - {fileID: 8133641016976903564, guid: 0d08d1add8a70424b95fef66b112fd67, type: 3}
 --- !u!1 &3067294316876138208
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,12 +272,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5997456628715999207}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9521f30ea02057b4391a85868889bd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  speed1: 0
+  speed2: 0
+  speed3: 250
 --- !u!95 &1762402250
 Animator:
   serializedVersion: 3

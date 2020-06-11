@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public static EnemyController enemy;
+
     private NavMeshAgent Mob;
     public GameObject player;
     public GameObject bullet;
@@ -16,32 +18,51 @@ public class EnemyController : MonoBehaviour
     public float attackRate = 1;
     public float attackCooldown = 0;
     public float enemyRotation = 2;
+
+    private float _Health = 100;
+    [SerializeField]
+    private float _CurrentHealth;
+    public GameObject hitMuzzel;
+
+    bool isDied = false;
     // Start is called before the first frame update
     void Start()
     {
+        _CurrentHealth = _Health;
+        enemy = this;
         Mob = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        attackCooldown -= Time.deltaTime;
-        float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance <= MobDistanceRun)
+        Die();
+        movement();
+    }
+
+    void movement()
+    {
+        if (!isDied)
         {
-            Vector3 dirToPlayer = transform.position - player.transform.position;
-            Vector3 newPos = transform.position - dirToPlayer;
-            Mob.SetDestination(newPos);
-            facePlayer();
-        }
-        if (distance <= shootArea)
-        {
-            if(attackCooldown <= 0f)
+            attackCooldown -= Time.deltaTime;
+            float distance = Vector3.Distance(transform.position, player.transform.position);
+            if (distance <= MobDistanceRun)
             {
-                StartCoroutine(shoot(0.01f));
-                attackCooldown = 1f / attackRate;
+                Vector3 dirToPlayer = transform.position - player.transform.position;
+                Vector3 newPos = transform.position - dirToPlayer;
+                Mob.SetDestination(newPos);
+                facePlayer();
             }
-            
+            if (distance <= shootArea)
+            {
+                if (attackCooldown <= 0f)
+                {
+                    StartCoroutine(shoot(0.01f));
+                    attackCooldown = 1f / attackRate;
+                }
+
+            }
+            shootPoint.transform.LookAt(player.transform);
         }
     }
     private void OnDrawGizmos()
@@ -65,10 +86,22 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(time);
         GameObject Bullet = Instantiate(bullet, shootPoint.transform.position, shootPoint.transform.rotation);
         bullet.transform.LookAt(player.transform);
+        
         Rigidbody bulletRb = Bullet.GetComponent<Rigidbody>();
         bulletRb.AddForce(shootPoint.forward * bulletSpeed, ForceMode.Impulse);
-        //GameObject muzzelObj = Instantiate(_muzzel, shootPoint.transform.position, Quaternion.identity);
-        //Destroy(muzzelObj, 0.5f);
         Destroy(Bullet, 1f);
+    }
+
+    public void TakeDamage(float value)
+    {
+        _CurrentHealth = _CurrentHealth-value;
+    }
+    public void Die()
+    {
+        if (_CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+            isDied = true;
+        }
     }
 }

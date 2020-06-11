@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerBulletShoot : MonoBehaviour
 {
     public static PlayerBulletShoot instance;
-
+/*
     public bullet_bl_1 bullet_bl;
-    public bullet_or_1 bullet_or;
-    public bullet_fire_1 bullet_fire;
+    public bullets bullet_or;
+    public bullet_fire_1 bullet_fire;*/
+
     public Player player;
     public Animator anime;
 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2319454386257240653}
   - component: {fileID: 2319454386257240655}
   - component: {fileID: 2319454386257240652}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Beem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4767,7 +4767,7 @@ GameObject:
   - component: {fileID: -6667941682203268558}
   - component: {fileID: -4919875363026588157}
   - component: {fileID: 6257304426361846871}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: vfx_bullet_or_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4892,7 @@ GameObject:
   - component: {fileID: 2319454386557920927}
   - component: {fileID: 2319454386557920921}
   - component: {fileID: 2319454386557920926}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: BulletPro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9645,7 +9645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 778303725730975384}
   - component: {fileID: 6912232325284023865}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

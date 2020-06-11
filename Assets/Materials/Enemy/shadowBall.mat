@@ -54,13 +54,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_21D549E7: 24.63
-    - Vector1_2AD51A7F: 7.03
-    - Vector1_4AAA3494: 2
+    - Vector1_21D549E7: 21.37
+    - Vector1_2AD51A7F: 6.96
+    - Vector1_4AAA3494: 16.7
     - Vector1_50DFCC2E: 0.2
     - Vector1_61EDA254: 0
     - Vector1_919D999F: 0.5
-    - Vector1_9C84D0B1: 7.3
+    - Vector1_9C84D0B1: 2.91
     - Vector1_CCB25554: 5
     - Vector1_E5F03E49: 1
     - _AlphaClip: 0
@@ -89,7 +89,7 @@ Material:
     - Color_50DD6466: {r: 0.9951904, g: 0, b: 2.1256547, a: 0}
     - Color_BC274D8A: {r: 0.5399747, g: 0, b: 3.3584902, a: 1}
     - Color_E6CB3E65: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_4C2FAE7B: {r: -0.1, g: 0.5, b: 0, a: 0}
+    - Vector2_4C2FAE7B: {r: -0.01, g: 0.1, b: 0, a: 0}
     - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 2.520743, g: 0.64792144, b: 0, a: 1}

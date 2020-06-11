@@ -4763,13 +4763,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63470200146397996}
-  - component: {fileID: 7772815897246385354}
   - component: {fileID: 263338431386626317}
   - component: {fileID: 1974883252000288060}
   - component: {fileID: 8504853897230434152}
+  - component: {fileID: 4959004037798596368}
   m_Layer: 9
   m_Name: vfx_bullet_bl_1
-  m_TagString: Untagged
+  m_TagString: Player Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4791,19 +4791,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7772815897246385354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63470200146397999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fafbd8b3373b8cf48b4670f7e65186f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 263338431386626317}
 --- !u!54 &263338431386626317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4881,6 +4868,19 @@ MonoBehaviour:
   m_UseImpactDirection: 0
   m_ScaleImpactWithMass: 0
   m_ScaleImpactWithSpeed: 0
+--- !u!114 &4959004037798596368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63470200146397999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa900d0a603f3ee4abf2cf0aa3456785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 263338431386626317}
 --- !u!1 &63470200428126589
 GameObject:
   m_ObjectHideFlags: 0

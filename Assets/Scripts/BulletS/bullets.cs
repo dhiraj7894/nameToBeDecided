@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet_or_1 : MonoBehaviour
+public class bullets : MonoBehaviour
 {
     
-    public static bullet_or_1 bullet;
+    public static bullets bullet;
 
     public Rigidbody rb;
 
@@ -18,19 +18,13 @@ public class bullet_or_1 : MonoBehaviour
     }
 
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        speed = 0;
-        if (Player.player.muzzelHit != null)
-        {
-            var hitVFX = Instantiate(Player.player.muzzelHit, transform.position, Quaternion.identity);
-            Destroy(hitVFX, 0.5f);
-        }
-        Destroy(gameObject);
-    }*/
-
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("CMON"))
+        {
+            EnemyController.enemy.TakeDamage(10);
+        }
+
         if (PlayerBulletShoot.instance._getMuzzelData() != null)
         {
             var hitVFX = Instantiate(PlayerBulletShoot.instance._getMuzzelData(), transform.position, Quaternion.identity);

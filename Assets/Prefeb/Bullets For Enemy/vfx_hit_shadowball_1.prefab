@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2253031662502831195}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vfx_hit_shadowball_1
-  m_TagString: Untagged
+  m_TagString: Enemy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2253031662733200901}
   - component: {fileID: 2253031662733200903}
   - component: {fileID: 2253031662733200900}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Beem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 1351152531293469372}
   - component: {fileID: 1166740501985808734}
   - component: {fileID: 4600643956425476657}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}

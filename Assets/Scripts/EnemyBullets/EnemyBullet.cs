@@ -6,9 +6,13 @@ public class EnemyBullet : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (EnemyController.enemy.hitMuzzel[0] != null)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            var hitVFX = Instantiate(EnemyController.enemy.hitMuzzel[0], transform.position, Quaternion.identity);
+            Player.player.takePlayerDamage(10);
+        }
+        if (EnemyController.enemy.hitMuzzel != null)
+        {
+            var hitVFX = Instantiate(EnemyController.enemy.hitMuzzel, transform.position, Quaternion.identity);
             Destroy(hitVFX, 0.5f);
         }
         Destroy(gameObject, 0.1f);
