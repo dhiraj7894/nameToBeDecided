@@ -127,13 +127,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.2
+  m_Height: 1.25
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.3, z: 0}
+  m_Center: {x: 0, y: 1.25, z: 0}
 --- !u!114 &2280501081388325046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,9 +151,10 @@ MonoBehaviour:
   cam: {fileID: 0}
   Gun: {fileID: 7304951706947370484}
   verticalVelocity: 0
-  jumpForce: 10
+  jumpForce: 5
   speed: 8
-  rotationSmoothness: 0.5
+  rotationSmoothness: 0.2
+  _CurrentHealth: 0
   anime: {fileID: 1762402250}
   _angle: 0
 --- !u!208 &972094735
@@ -344,7 +345,7 @@ GameObject:
   - component: {fileID: 616829342616408464}
   m_Layer: 10
   m_Name: Outline
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

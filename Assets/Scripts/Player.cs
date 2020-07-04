@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
         {
             _targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             _angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetAngle, ref turnSmoothVelocity, rotationSmoothness);
-            transform.rotation = Quaternion.Euler(0f, _targetAngle, 0f);
+            transform.rotation = Quaternion.Euler(0f, _angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, _targetAngle, 0f) * Vector3.forward;
 

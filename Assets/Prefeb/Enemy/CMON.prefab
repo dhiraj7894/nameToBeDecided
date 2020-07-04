@@ -184,8 +184,8 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5050264790016750115, guid: d6f7f616844682949b61f1a7847fb513, type: 3}
   shootPoint: {fileID: 1556221637}
-  MobDistanceRun: 12
-  shootArea: 10
+  MobDistanceRun: 20
+  shootArea: 8
   bulletSpeed: 30
   attackRate: 0.5
   attackCooldown: 0
