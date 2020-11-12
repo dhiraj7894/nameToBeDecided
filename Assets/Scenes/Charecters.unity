@@ -225,7 +225,6 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_CameraOutput: 0
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -237,6 +236,7 @@ MonoBehaviour:
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
+  m_ClearDepth: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -474,6 +474,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2207655185686273471, guid: d43784f0c1f6c4446a00fd170f2c4adb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.038999557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736657660287246785, guid: d43784f0c1f6c4446a00fd170f2c4adb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.039
+      objectReference: {fileID: 0}
     - target: {fileID: 8584721988026001516, guid: d43784f0c1f6c4446a00fd170f2c4adb,
         type: 3}
       propertyPath: m_Name
@@ -533,6 +543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637898692264292828, guid: d43784f0c1f6c4446a00fd170f2c4adb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.038999557
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d43784f0c1f6c4446a00fd170f2c4adb, type: 3}
